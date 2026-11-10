@@ -32,7 +32,16 @@
 ![Godot](https://img.shields.io/badge/Godot-0b0f19?style=for-the-badge&logo=godotengine&logoColor=f5c518)
 ![Roblox Studio](https://img.shields.io/badge/Roblox_Studio-0b0f19?style=for-the-badge&logo=robloxstudio&logoColor=f5c518)
 
-### ▸ 03 // REGISTROS
+### ▸ 03 // MONITOR DE ATIVIDADE
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pxdrik/pxdrik/output/rastro-escuro.svg">
+  <img alt="Gráfico de contribuições animado em amarelo" src="https://raw.githubusercontent.com/pxdrik/pxdrik/output/rastro-claro.svg" width="100%">
+</picture>
+
+<sub>Cada commit deixa uma marca.</sub>
+
+### ▸ 04 // REGISTROS
 
 `#001` 🏆 **1º lugar** no Desafio de IA em Saúde<br>
 `#002` 🦇 LaCalle Life e LaCalle Finance no ar<br>
