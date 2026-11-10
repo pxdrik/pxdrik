@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 210" width="400" height="210" role="img" aria-label="Caso 002: LaCalle Finance. Finanças pessoais sem planilha. Contas, gastos e metas.">
+  <style>
+    .mono { font-family: Consolas, 'SFMono-Regular', Menlo, monospace; }
+    .texto { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; }
+    .ponto { animation: pulsar 1.6s ease-in-out infinite; }
+    @keyframes pulsar { 0%,100% { opacity: 1 } 50% { opacity: .25 } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+  <rect x="1" y="1" width="398" height="208" rx="12" fill="#0b0f19" stroke="#1e293b"/>
+  <rect x="1" y="16" width="5" height="178" rx="2" fill="#f5c518"/>
+  <path d="M0 -8 L4 -16 L6 -8 Q18 -14 30 -26 Q46 -18 60 -22 Q52 -10 54 4 Q44 -2 38 8 Q30 0 22 10 Q14 2 8 14 L0 22 L-8 14 Q-14 2 -22 10 Q-30 0 -38 8 Q-44 -2 -54 4 Q-52 -10 -60 -22 Q-46 -18 -30 -26 Q-18 -14 -6 -8 L-4 -16 Z" transform="translate(330 150) scale(.9)" fill="#f5c518" opacity=".06"/>
+  <text class="mono" x="28" y="40" font-size="13" letter-spacing="3" fill="#f5c518">CASO 002</text>
+  <circle class="ponto" cx="300" cy="35" r="4" fill="#f5c518"/>
+  <text class="mono" x="312" y="40" font-size="12" letter-spacing="2" fill="#94a3b8">NO AR</text>
+  <text class="texto" x="28" y="88" font-size="30" font-weight="700" fill="#f8fafc">LaCalle Finance</text>
+  <text class="texto" x="28" y="124" font-size="17" fill="#cbd5e1">Finanças pessoais sem planilha.</text>
+  <text class="texto" x="28" y="148" font-size="17" fill="#94a3b8">Contas, gastos e metas.</text>
+  <text class="mono" x="28" y="188" font-size="13" letter-spacing="2" fill="#f5c518">ABRIR ARQUIVO ›</text>
+</svg>

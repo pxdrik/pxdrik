@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 250" width="900" height="250" role="img" aria-label="whoami: pxdrik, desenvolvedor em São Paulo. Missão atual: construir o ecossistema LaCalle. Lema: não espero a ideia perfeita, começo a construir.">
+  <style>
+    .mono { font-family: Consolas, 'SFMono-Regular', Menlo, monospace; font-size: 18px; }
+    .l { animation-duration: 12s; animation-iteration-count: infinite; }
+    .l1 { animation-name: s1 } .l2 { animation-name: s2 } .l3 { animation-name: s3 }
+    .l4 { animation-name: s4 } .l5 { animation-name: s5 } .l6 { animation-name: s6 }
+    @keyframes s1 { 0%,2% { opacity: 0 } 4%,96% { opacity: 1 } 100% { opacity: 0 } }
+    @keyframes s2 { 0%,10% { opacity: 0 } 12%,96% { opacity: 1 } 100% { opacity: 0 } }
+    @keyframes s3 { 0%,22% { opacity: 0 } 24%,96% { opacity: 1 } 100% { opacity: 0 } }
+    @keyframes s4 { 0%,30% { opacity: 0 } 32%,96% { opacity: 1 } 100% { opacity: 0 } }
+    @keyframes s5 { 0%,42% { opacity: 0 } 44%,96% { opacity: 1 } 100% { opacity: 0 } }
+    @keyframes s6 { 0%,50% { opacity: 0 } 52%,96% { opacity: 1 } 100% { opacity: 0 } }
+    .cursor { animation: piscar 1s steps(1) infinite; }
+    @keyframes piscar { 50% { opacity: 0 } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+  <rect x="1" y="1" width="898" height="248" rx="12" fill="#0b0f19" stroke="#f5c518" stroke-opacity=".35"/>
+  <path d="M1 13 a12 12 0 0 1 12 -12 H887 a12 12 0 0 1 12 12 V36 H1 Z" fill="#111827"/>
+  <circle cx="24" cy="19" r="6" fill="#334155"/>
+  <circle cx="44" cy="19" r="6" fill="#334155"/>
+  <circle cx="64" cy="19" r="6" fill="#f5c518"/>
+  <text x="450" y="24" text-anchor="middle" class="mono" font-size="13" fill="#64748b">pxdrik@sp: ~</text>
+
+  <g class="mono">
+    <text class="l l1" x="28" y="72"><tspan fill="#f5c518">$</tspan><tspan fill="#e2e8f0"> whoami</tspan></text>
+    <text class="l l2" x="28" y="100" fill="#94a3b8">pxdrik · desenvolvedor · São Paulo, BR</text>
+    <text class="l l3" x="28" y="138"><tspan fill="#f5c518">$</tspan><tspan fill="#e2e8f0"> missao --atual</tspan></text>
+    <text class="l l4" x="28" y="166" fill="#94a3b8">construindo o ecossistema LaCalle: dieta, treino e finanças</text>
+    <text class="l l5" x="28" y="204"><tspan fill="#f5c518">$</tspan><tspan fill="#e2e8f0"> echo $LEMA</tspan></text>
+    <text class="l l6" x="28" y="232" fill="#f5c518">Não espero a ideia perfeita. Começo a construir.<tspan class="cursor"> █</tspan></text>
+  </g>
+</svg>

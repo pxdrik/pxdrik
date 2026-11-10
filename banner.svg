@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-label="pxdrik">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-label="PXDRIK, desenvolvedor e criador do LaCalle">
   <defs>
     <linearGradient id="ceu" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#0b1020"/>
@@ -14,24 +14,43 @@
       <stop offset="1" stop-color="#ffd23f" stop-opacity="0"/>
     </radialGradient>
     <filter id="brilho" x="-20%" y="-50%" width="140%" height="200%">
-      <feGaussianBlur stdDeviation="6" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+      <feGaussianBlur stdDeviation="9"/>
     </filter>
     <path id="morcego" d="M0 -8 L4 -16 L6 -8 Q18 -14 30 -26 Q46 -18 60 -22 Q52 -10 54 4 Q44 -2 38 8 Q30 0 22 10 Q14 2 8 14 L0 22 L-8 14 Q-14 2 -22 10 Q-30 0 -38 8 Q-44 -2 -54 4 Q-52 -10 -60 -22 Q-46 -18 -30 -26 Q-18 -14 -6 -8 L-4 -16 Z"/>
     <style>
+      /* Ciclo de 15 s: cidade acende, holofote liga piscando, nome ganha brilho. */
       .estrela { animation: piscar 3s ease-in-out infinite; }
       .e2 { animation-delay: 1s; } .e3 { animation-delay: 2s; }
       @keyframes piscar { 0%,100% { opacity: .9 } 50% { opacity: .2 } }
-      .sinal { animation: tremer 4s ease-in-out infinite; }
-      @keyframes tremer { 0%,100% { opacity: 1 } 47% { opacity: 1 } 50% { opacity: .7 } 53% { opacity: 1 } }
-      .janela { animation: luz 5s steps(1) infinite; }
-      .j2 { animation-delay: 2.5s; }
-      @keyframes luz { 0%,60% { opacity: 1 } 61%,100% { opacity: .15 } }
-      .voo { animation: voar 14s linear infinite; }
-      .voo2 { animation-duration: 19s; animation-delay: -7s; }
+
+      .janela { animation: acender 15s infinite; }
+      .j2 { animation-delay: .4s; } .j3 { animation-delay: .8s; }
+      @keyframes acender { 0%,6% { opacity: .08 } 10%,94% { opacity: 1 } 100% { opacity: .08 } }
+
+      .sinal { animation: holofote 15s infinite; }
+      @keyframes holofote {
+        0%,14% { opacity: 0 } 18% { opacity: .7 } 20% { opacity: .15 } 23% { opacity: .9 }
+        25% { opacity: .4 } 28%,92% { opacity: 1 } 100% { opacity: 0 }
+      }
+
+      .aura { animation: aura 15s infinite; }
+      @keyframes aura { 0%,28% { opacity: 0 } 36% { opacity: 1 } 60% { opacity: .7 } 92% { opacity: .9 } 100% { opacity: 0 } }
+
+      .chuva { animation: cair 1.4s linear infinite; }
+      @keyframes cair { from { transform: translate(0, 0) } to { transform: translate(-24px, 360px) } }
+
+      .voo { animation: voar 15s linear infinite; }
+      .voo2 { animation-duration: 21s; animation-delay: -8s; }
       @keyframes voar { from { transform: translate(-80px, 0) } to { transform: translate(1300px, -40px) } }
+
+      .ponto { animation: pulsar 1.6s ease-in-out infinite; }
+      @keyframes pulsar { 0%,100% { opacity: 1 } 50% { opacity: .25 } }
+
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+
       .titulo { font-family: Impact, 'Arial Black', 'Helvetica Neue', sans-serif; }
       .texto { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; }
+      .mono { font-family: Consolas, 'SFMono-Regular', Menlo, monospace; }
     </style>
   </defs>
 
@@ -46,11 +65,16 @@
     <circle class="estrela e2" cx="560" cy="25" r="1.5"/>
     <circle class="estrela e3" cx="640" cy="110" r="1"/>
     <circle class="estrela" cx="720" cy="45" r="1.2"/>
-    <circle class="estrela e2" cx="1100" cy="35" r="1.4"/>
     <circle class="estrela e3" cx="1160" cy="120" r="1"/>
     <circle class="estrela" cx="1050" cy="150" r="1"/>
     <circle class="estrela e3" cx="140" cy="130" r="1"/>
     <circle class="estrela e2" cx="400" cy="140" r="1.1"/>
+  </g>
+
+  <!-- chuva fina: o padrão se repete a cada 360 px na vertical -->
+  <g class="chuva" stroke="#94a3b8" stroke-width="1" opacity=".14">
+    <path d="M60 30 l-4 16 M150 200 l-4 16 M240 110 l-4 16 M330 280 l-4 16 M420 60 l-4 16 M510 240 l-4 16 M600 150 l-4 16 M690 320 l-4 16 M780 90 l-4 16 M870 210 l-4 16 M960 40 l-4 16 M1050 300 l-4 16 M1140 170 l-4 16 M1200 250 l-4 16"/>
+    <path d="M60 -330 l-4 16 M150 -160 l-4 16 M240 -250 l-4 16 M330 -80 l-4 16 M420 -300 l-4 16 M510 -120 l-4 16 M600 -210 l-4 16 M690 -40 l-4 16 M780 -270 l-4 16 M870 -150 l-4 16 M960 -320 l-4 16 M1050 -60 l-4 16 M1140 -190 l-4 16 M1200 -110 l-4 16"/>
   </g>
 
   <!-- holofote -->
@@ -65,25 +89,31 @@
   <g transform="translate(0 150)"><g class="voo voo2"><use href="#morcego" transform="scale(0.16)" fill="#94a3b8" opacity=".4"/></g></g>
 
   <!-- cidade -->
-  <g fill="#0e1220">
-    <path d="M0 360 V300 H40 V285 H90 V305 H130 V275 H175 V300 H230 V290 H280 V310 H330 V280 H360 V265 H400 V295 H450 V300 H500 V270 H540 V250 H560 V235 H580 V250 H600 V285 H650 V255 H700 V290 H740 V230 H760 V215 H790 V230 H800 V280 H850 V240 H900 V275 H940 V250 H970 V200 H985 V180 H995 V200 H1030 V260 H1080 V235 H1130 V280 H1170 V255 H1200 V360 Z"/>
-  </g>
+  <path fill="#0e1220" d="M0 360 V300 H40 V285 H90 V305 H130 V275 H175 V300 H230 V290 H280 V310 H330 V280 H360 V265 H400 V295 H450 V300 H500 V270 H540 V250 H560 V235 H580 V250 H600 V285 H650 V255 H700 V290 H740 V230 H760 V215 H790 V230 H800 V280 H850 V240 H900 V275 H940 V250 H970 V200 H985 V180 H995 V200 H1030 V260 H1080 V235 H1130 V280 H1170 V255 H1200 V360 Z"/>
   <g fill="#ffd23f">
     <rect class="janela" x="548" y="262" width="5" height="7"/>
     <rect class="janela j2" x="568" y="248" width="5" height="7"/>
-    <rect x="748" y="245" width="5" height="7" opacity=".8"/>
+    <rect class="janela j3" x="748" y="245" width="5" height="7"/>
     <rect class="janela" x="772" y="240" width="5" height="7"/>
     <rect class="janela j2" x="986" y="215" width="5" height="7"/>
-    <rect x="1005" y="230" width="5" height="7" opacity=".8"/>
+    <rect class="janela j3" x="1005" y="230" width="5" height="7"/>
     <rect class="janela" x="1010" y="275" width="5" height="7"/>
-    <rect x="862" y="255" width="5" height="7" opacity=".6"/>
-    <rect class="janela j2" x="1092" y="250" width="5" height="7"/>
-    <rect x="370" y="280" width="5" height="7" opacity=".6"/>
-    <rect class="janela" x="660" y="270" width="5" height="7"/>
+    <rect class="janela j2" x="862" y="255" width="5" height="7"/>
+    <rect class="janela j3" x="1092" y="250" width="5" height="7"/>
+    <rect class="janela j3" x="370" y="280" width="5" height="7"/>
+    <rect class="janela j2" x="660" y="270" width="5" height="7"/>
+  </g>
+
+  <!-- letreiro -->
+  <g class="mono" font-size="13" letter-spacing="3">
+    <circle class="ponto" cx="1046" cy="32" r="4" fill="#f5c518"/>
+    <text x="1058" y="37" fill="#cbd5e1">PXDRIK</text>
+    <text x="1122" y="37" fill="#64748b">ONLINE</text>
   </g>
 
   <!-- nome -->
-  <text class="titulo" x="70" y="160" font-size="104" letter-spacing="8" fill="#f5c518" filter="url(#brilho)">PXDRIK</text>
+  <text class="titulo aura" x="70" y="160" font-size="104" letter-spacing="8" fill="#f5c518" filter="url(#brilho)">PXDRIK</text>
+  <text class="titulo" x="70" y="160" font-size="104" letter-spacing="8" fill="#f5c518">PXDRIK</text>
   <text class="texto" x="74" y="208" font-size="26" fill="#cbd5e1">Desenvolvedor · criador do LaCalle</text>
   <text class="texto" x="74" y="244" font-size="18" fill="#94a3b8" font-style="italic">O código sai melhor de madrugada.</text>
 </svg>
