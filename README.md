@@ -34,11 +34,9 @@
 
 ### ▸ 03 // REGISTROS
 
-| | |
-|---|---|
-| `#001` 🏆 | **1º lugar** no Desafio de IA em Saúde |
-| `#002` 🦇 | LaCalle Life e LaCalle Finance no ar |
-| `#003` 📰 | Revista Teen publicada, com app próprio de redação para a equipe |
+`#001` 🏆 **1º lugar** no Desafio de IA em Saúde<br>
+`#002` 🦇 LaCalle Life e LaCalle Finance no ar<br>
+`#003` 📰 Revista Teen publicada, com app próprio de redação para a equipe
 
 <br>
 
